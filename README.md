@@ -61,6 +61,10 @@ Forma: Enviar o link do repositório (GitHub ou similar) + vídeo da demo por e-
 
 ## Como rodar:
 
+    git clone https://github.com/AraujoDavies/Chat-Car-Agent-IA.git
+    
+    cd Chat-Car-Agent-IA/
+
 ### Com Docker
 
 No arquivo [Compose.yml](compose.yml). Altere a variavel de ambiente **GEMINI_API_KEY**. 
