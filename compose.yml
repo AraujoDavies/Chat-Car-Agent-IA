@@ -1,0 +1,26 @@
+services:
+  server:
+    container_name: mcp-server
+    image: python:3.11-slim
+    working_dir: /app
+    volumes: 
+      - ./:/app/
+    environment:
+      - DATABASE_URI=sqlite:///app.db
+    ports:
+      - "8000:8000"
+    command: sh -c "pip install -r requirements.txt && python code/server.py"
+
+  client:
+    container_name: chat-car-client
+    image: python:3.11-slim
+    working_dir: /app
+    volumes: 
+      - ./:/app/
+    environment:
+      # Substitua pelo valor real da sua chave de API do Gemini
+      - GEMINI_API_KEY=YOUR_GEMINI_API_KEY_HERE
+      
+      - MCP_SERVER_URL=http://server:8000/mcp
+      - TZ=America/Sao_Paulo
+    command: sh -c "pip install -r requirements.txt && sleep infinity"

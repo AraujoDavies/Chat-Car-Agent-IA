@@ -1,0 +1,40 @@
+[project]
+name = "desafio-tecnico-python"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "mrrobnote",email = "daviesaraujo@hotmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "faker (>=40.12.0,<41.0.0)",
+    "sqlalchemy (>=2.0.48,<3.0.0)",
+    "google-genai (>=1.70.0,<2.0.0)",
+    "pandas (>=3.0.2,<4.0.0)",
+    "mcp[cli] (>=1.27.0,<2.0.0)",
+    "fastapi[standard] (>=0.135.3,<0.136.0)",
+    "fastapi-mcp (>=0.4.0,<0.5.0)",
+    "uvicorn[standard] (>=0.42.0,<0.43.0)",
+    "python-dotenv (>=1.2.2,<2.0.0)",
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+black = "^26.3.1"
+isort = "^8.0.1"
+pytest = "^9.0.2"
+pytest-cov = "^7.1.0"
+ipython = "8.15"
+
+
+[tool.poetry.group.doc.dependencies]
+mkdocs-material = "^9.7.6"
+pyyaml = "6.0"
+mkdocstrings = "^1.0.3"
+mkdocstrings-python = "^2.0.3"
+

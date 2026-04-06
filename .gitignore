@@ -1,0 +1,15 @@
+__pycache__/ 
+.env 
+htmlcov/ 
+.coverage 
+.pytest_cache/ 
+*.pdf
+.vscode
+.venv
+*.log
+docs/
+mkdocs.yml
+tests/
+client_old.py
+config_faker_providers.py
+*.db
