@@ -1,5 +1,7 @@
 # Desafio Técnico – Vaga de Desenvolvedor Python
 
+[Assista ao Video demonstrativo](https://youtu.be/9I8qp9RXK6Q) 
+
 Sumário:
 
 - [Objetivo](#objetivo)
